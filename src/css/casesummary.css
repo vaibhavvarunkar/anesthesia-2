@@ -1,0 +1,638 @@
+.case-summary-container{
+    margin-left: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.case1-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+width: 100px;
+height: 100px;
+background-color: #00695c;
+}
+
+.case1-header{
+    color: orange;
+}
+.add-icon{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 25px;
+    color: white;
+    font-size: 50px;
+}
+
+.input-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.separate-input-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+.separate-input-subcontainer{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+
+.Unanswered-header{
+    margin-top: 10%;
+    margin-left: 50%;
+    color: orange;
+}
+
+.tab-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    background-color:#00695c;
+}
+
+.tab-container-tabs{
+    width: 20%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.tab-container-tabs:hover{
+    color: orange;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.question-counter-container{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+width: 90%;
+background-color: #7eca9c;
+height: 60px;
+}
+
+.left-icon{
+    margin-left: 20px;
+    transform: rotate(180deg);
+    color: white;
+    font-size: 50px;
+
+}
+
+.question-counter-container-header{
+    color: white;
+    font-size: 20px;
+}
+
+.question-container{
+    height: 300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.question-container h3{
+    font-size: 35px !important;
+    font-weight: 700;
+}
+
+@media (max-width: 768px){
+    .question-container h3{
+        font-size: 25px !important;
+    }
+
+    .next-button{
+        cursor: pointer;
+        background-color: #81b214;
+        color: white;
+        width: 150px;
+        height: 40px;
+        margin: 0.6rem;
+        border-radius: 50%;
+    }
+
+    .question-container input{
+        width: 70%;
+        height: 40px;
+        margin: 0.5rem;
+    }
+
+    .question-container .select{
+        width: 150px;
+        /* height: 20px; */
+        margin: 0.3rem;
+    }
+
+    .question-container .q14{
+        width: 90%;
+        position: relative;
+        left: 2rem !important;
+        margin: 0;
+    }
+
+    .q14::placeholder{
+        font-size: 0.8rem !important;
+    }
+}
+
+.q14{
+    position: relative;
+    left: 7rem;
+}
+
+.question-container input{
+    outline: none;
+}
+
+.age-header-container{
+    align-self: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #ffcc29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.header-container-bgc{
+    background-color: #ffcc29 !important;   
+}
+
+.age-input-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.age-input{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+
+   }
+
+.age-type-dropdown{
+    width: 100px;
+    
+}
+
+.next-button-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.next-button{
+    cursor: pointer;
+    background-color: #81b214;
+    color: white;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.gender-header-container{
+    align-self: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.gender-input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.gender-dropdown{
+    width: 200px;
+    
+}
+
+.patientype-header-container{
+    align-self: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.patientype-input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.patientype-dropdown{
+    width: 250px;
+    
+}
+
+.height-header-container{
+    align-self: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.height-input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.height-input{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.height-type-dropdown{
+    width: 150px;
+    
+}
+
+.weight-header-container{
+    align-self: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.weight-input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.weight-input{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.weight-type-dropdown{
+    width: 150px;
+    
+}
+
+
+.ASA-PS-header-container{
+    align-self: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.ASA-PS-input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.ASA-PS-dropdown{
+    width: 250px;
+    
+}
+
+
+.Surgery-type-header-container{
+    align-self: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.Surgery-type-input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.Surgery-type-dropdown{
+    width: 250px;
+    
+}
+
+.ANESTHESIA-type-header-container{
+    align-self: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.ANESTHESIA-type-input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.ANESTHESIA-type-dropdown{
+    width: 250px;
+    
+}
+
+.medical-history-header-container{
+    align-self: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.medical-history-main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center
+}
+.medical-history-question-header{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around  
+}
+
+.unansered-header{
+color: orange;
+margin-left: 20px;
+}
+
+.medical-history-question-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+
+.medical-history-sub-question-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.medical-history-sub-question-counter-container{
+    margin-top: 20px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.medical-history-sub-question-sub-container{
+   width: 100%;
+   height: 300px;
+   display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.sub-question-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+  
+}
+
+.option-box-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.input-container-for-other{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.result-container{
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.answer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.close-case-image{
+    width: 50px;
+    height: 50px;
+    }
+
+.close-case-container{
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.medications-header-container{
+    align-self: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.medications-input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.medications-dropdown{
+    width: 250px;
+    
+}
+
+.action-summary{
+    width: 100%;
+    height: 60px;
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.preop-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 12px;
+    background-color: blue;
+}
+.gray-circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 12px;
+    background-color: gray;
+
+}
+
+.preop-container-subcontainer{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}

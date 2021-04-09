@@ -1,0 +1,52 @@
+.burger-modal-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  position: absolute;
+}
+
+Link{
+    text-decoration: none;
+    list-style: none;
+}
+
+.border {
+  width: 100%;
+  height: 2px;
+  background-color: black !important;
+  margin-bottom: 0.5rem;
+}
+
+.burger-modal-container .link{
+    text-decoration: none;
+    color: green !important;
+    margin: 0.1rem 0;
+    cursor: pointer;
+}
+
+.link:hover{
+    color:darkgreen !important;
+    text-decoration: underline;
+}
+
+.modal{
+    top: '35%';
+    left: '50%';
+    right: 'auto';
+    bottom: 'auto';
+    margin-right: '-50%';
+    width: '60%';
+    transform: 'translate(-40%, -10%)';
+}
+
+.Overlay{
+    background-color: red;
+}
+
+
+
+
+  

@@ -1,0 +1,30 @@
+.all-action-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+
+
+.all-action-subcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 80%;
+  
+}
+
+.all-action-subcontainer-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dropdown-icon{
+    font-size: 30px;
+    color: lightgray;
+}
