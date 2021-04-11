@@ -114,7 +114,7 @@ const AllAction = () => {
                    {
                        actionLibraryData.map((data)=>{
                            return(
-                           <div  >
+                           <div >
                                <div className="all-action-subcontainer-content" >
                                    <i className="material-icons dropdown-icon" >play_arrow</i>
                                <div style={{cursor:"pointer"}} onClick={()=>onClickCategory(data.name)} >{data.name}</div>

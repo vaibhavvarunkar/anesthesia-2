@@ -51,7 +51,7 @@ body{
 }
 
 .container{
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .navbar_header {
@@ -61,6 +61,8 @@ body{
 
 .logo-img {
   height: 60px !important;
+  width: 400px;
+  margin-top: 0.5rem;
 }
 
 .profile-left{
@@ -84,6 +86,10 @@ body{
   margin: 0.7rem 0;
 }
 
+.user-profile p{
+  font-size: 1rem;
+}
+
 .username{
   font-size: 1.2rem;
   font-weight: 500;
@@ -99,6 +105,7 @@ body{
 .user-profile-show{
   text-align: start;
   margin: 0 3rem;
+  padding-bottom: 0.5rem;
 }
 
 .user-profile-show span{
@@ -108,7 +115,7 @@ body{
 }
 
 .user-profile-show p{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -421,6 +428,24 @@ h3 {
 
   .bottom-bor-3{
     display: none;
+  }
+
+  .user-profile-show p{
+    padding-right: 0.5rem;
+    font-size: 0.9rem !important;
+  }
+
+  .user-profile-show {
+    margin-left: -0.8rem;
+  }
+
+  .user-profile p{
+    font-size: 0.9rem;
+  }
+
+  .logo-img{
+    height: 50px !important;
+    width: 280px !important;
   }
 }
 

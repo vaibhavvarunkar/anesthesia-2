@@ -879,45 +879,39 @@ const CaseSummary = () => {
             {subQuestionClick ? (
               <div className="medical-history-main-container">
                 <div>
-                  <h4 className="m-3">BY ORGAN SYSTEM:</h4>
+                  <h3 className="m-3">BY ORGAN SYSTEM:</h3>
                 </div>
                 {medicalHistory.map((data) => {
                   console.log(data);
                   return (
                     <div>
                        <div className="medical-history-question-header">
-                        <div className="mb-5">{data.id}.</div>
-                        <div className="mb-5">{data.name}</div>
+                        <div className="mb-4 mt-4 mr-5 text-center">
+                          <h4>{data.id}. {data.name}</h4>
+                        </div>
                       </div>
 
-                      {/*<div className="medical-history-sub-question-sub-container">
+                      <div className="medical-history-sub-question-sub-container">
                         {data.medical_history_sub_type.map((data) => {
                           return (
-                             <div className="sub-question-container">
-                              <div>{data.name}</div>
-                              <div className="option-box-container">
-                                <input
-                                  onChange={(e) => onSiteChanged(e)}
-                                  type="radio"
-                                  value="Yes"
-                                  name={data.name}
-                                  className="m-3"
-                                />{" "}
-                                Yes
-                                <input
-                                  onChange={(e) => onSiteChanged(e)}
-                                  type="radio"
-                                  value="No"
-                                  name={data.name}
-                                  className="m-3"
-                                />{" "}
-                                No
+                            
+                            <div className="container">
+                              <div className="row">
+                                <div className="col-6">
+                                  <p className="mr-5">{data.name}</p>
+                                </div>
+                                <div className="col-6 option-box-container">
+                                  <p> <input className="ml-3" onChange={(e)=>onSiteChanged(e)} type="radio" value="Yes" name={data.name} /> Yes
+                                  <input className="ml-3" onChange={(e)=>onSiteChanged(e)} type="radio" value="No" name={data.name} /> No
+                                </p>
+                              
+                                </div>
                               </div>
                             </div>
                           );
                         })}
-                      </div> */}
-                      <table class="table">
+                      </div>
+                      {/* <table class="table">
                         <thead>
                           <tr>
                             <th scope="col">First</th>
@@ -929,16 +923,8 @@ const CaseSummary = () => {
                             <td>{data.name}</td>
                             <td>@mdo</td>
                           </tr>
-                          <tr>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
                         </tbody>
-                      </table>
+                      </table> */}
                     </div>
                   );
                 })}
@@ -1201,9 +1187,24 @@ const CaseSummary = () => {
             <div className="answer-container">
               <div>6. SURGERY TYPE?</div>
               <div>
-                {surgerySubType.map((data) => {
-                  return <div>{data.label}</div>;
-                })}
+              {
+                                surgerySubType.length==0?
+                                surgeryType.map((data)=>{
+                                    return(
+                                        <div>
+                                            {data.label}
+                                        </div>
+                                    )
+                                }):<></>
+                            }
+                        {surgerySubType.map((data)=>{
+                            return(
+                                <div>
+                                    {data.label}
+                                </div>
+                            )
+                        
+                        })}
               </div>
             </div>
             <div className="answer-container">
